@@ -1,9 +1,26 @@
-# list of numbers to be printed
-list_of_numbers = [12, 10, 32, 3, 66, 17, 42, 99, 20]
-# Iterate the list of numbers and print each number and its square on a new line
-for number in list_of_numbers:
-  # Calculate the square of the number
-  square = number**2
+import turtle
 
-  # Print the number and its square to the screen
-  print(f"{number} squared is {square}")
+# Ask the user for the number of sides, the length of the side, the color of the line, and the fill color of the polygon.
+sides = int(input("Enter the number of sides: "))
+side_length = float(input("Enter the length of the side: "))
+line_color = input("Enter the color of the line: ")
+fill_color = input("Enter the fill color: ")
+
+# Set the turtle's color and fill color.
+turtle.color(line_color)
+turtle.fillcolor(fill_color)
+
+# Begin filling the polygon.
+turtle.begin_fill()
+
+# Draw the polygon.
+for i in range(sides):
+  turtle.forward(side_length)
+  turtle.left(360 / sides)
+
+# End filling the polygon.
+turtle.end_fill()
+
+turtle.hideturtle()
+
+turtle.done()
