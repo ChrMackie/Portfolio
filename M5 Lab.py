@@ -1,6 +1,9 @@
-#Christian Mackie 10/30/23
+# list of numbers to be printed
 list_of_numbers = [12, 10, 32, 3, 66, 17, 42, 99, 20]
-#iterates list of numbers and prints numbers in each line
+# Iterate the list of numbers and print each number and its square on a new line
 for number in list_of_numbers:
-  print(number)
+  # Calculate the square of the number
+  square = number**2
 
+  # Print the number and its square to the screen
+  print(f"{number} squared is {square}")
