@@ -1,10 +1,9 @@
-#ChristianMackie
-for i in range(1, 51):
-  if i % 3 == 0:
-    print("Divisible by three")
-  elif i % 5 == 0:
-    print("Divisible by five")
-  elif i % 3 == 0 and i % 5 == 0:
-    print("Divisible by both")
-  else:
-    print(i)
+import turtle
+
+# Set the turtle's color to blue.
+turtle.color("blue")
+
+# Draw a circle.
+turtle.circle(50)
+
+turtle.hideturtle()
