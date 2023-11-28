@@ -2,11 +2,11 @@ import turtle
 
 #create turtle screen
 screen=turtle.Screen()
-screen.bgcolor("white")
+screen.bgcolor("black")
 
 #create a turtle
 pen= turtle.Turtle()
-pen.speed(2)
+pen.speed(5)
 pen.color("blue")
 pen.pensize(2)
 
